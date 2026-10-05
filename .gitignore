@@ -1,0 +1,7 @@
+*.dpapi
+*.pfx
+*.p12
+*.key
+*.exe
+*.zip
+private-update-signing/
