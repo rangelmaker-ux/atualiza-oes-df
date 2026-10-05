@@ -6,7 +6,7 @@ O instalador aplica bibliotecas completas de cores/MDF, módulos, tampo/molduras
 2. Execute o instalador completo, autorize a elevação do Windows e selecione a pasta do Start.
 3. Informe o código acordado para autorizar a aplicação. Arquivos idênticos são mantidos; arquivos diferentes recebem backup antes da substituição.
 4. O atalho Promob Start Atualizações será criado na área de trabalho compartilhada.
-5. Abra o atalho e confira o endereço preconfigurado https://github.com/rangelmaker-ux/atualiza-oes-df. Essa configuração também exige o código. Até configurar, não há consultas de rede.
+5. Abra o atalho e confira o endereço preconfigurado https://github.com/rangelmaker-ux/atualiza-oes-df. Essa configuração também exige o código. O endereço já vem configurado; a tarefa consulta esse repositório sem instalar automaticamente.
 6. Buscar / baixar permite consultar manualmente. A tarefa do Windows consulta a cada quatro horas; apenas baixa pacotes assinados e registra o resultado.
 7. Durante a visita técnica, informe o código e clique em Instalar pacote baixado. A aplicação é local e exige Start fechado, versão compatível, espaço e integridade corretos.
 
@@ -28,5 +28,4 @@ Não executar o instalador anterior Completo 2026-10-05: ele ainda inclui altera
 
 ## Verificação desta versão
 
-Instalação completa em pasta de teste nova e reinstalação: 27.110 arquivos de bibliotecas; 15.496 registros nativos e 198 vínculos de puxadores. Os 284 arquivos de orçamento/XML já existentes ficaram byte a byte iguais. Testes de assinatura, código errado, versão repetida e reversão passaram. A tarefa foi validada pelo Agendador do Windows; o registro/execução como SYSTEM ainda exige teste com elevação. O terminal desta sessão não estava elevado.
-
+Instalação completa em pasta de teste nova e reinstalação: 27.110 arquivos de bibliotecas; 15.496 registros nativos e 198 vínculos de puxadores. Os 284 arquivos de orçamento/XML já existentes ficaram byte a byte iguais. Testes de assinatura, código errado, versão repetida e reversão passaram. O registro do atalho e do agendamento foram testados com elevação. A tarefa executou como SYSTEM, consultou o GitHub e terminou com resultado 0, sem instalar. Também passou o teste real de download, assinatura e aplicação autorizada de um pacote incremental pelo GitHub.
